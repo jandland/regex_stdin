@@ -10,11 +10,11 @@ with matched group value positional values passed to the printf spec in any orde
 
 ## How can regex_stdin be useful?
 - Allows data transformations with no extra programming.
-- Useful as an ad-hoc filter or tranformation tool
+- Useful as an ad-hoc filter or data tranformation tool
 - Command output from a program can be piped into regex_stdin.pl to be filtered or transformed
-- Cat a file as input to regex_stdin.pl to be filtered or transformed
+- Cat a file or use unix command pipe as input ... piped to regex_stdin.pl to be filtered or transformed
 - Send logging output through regex_stdin.pl to identify specifix error messages or other conditions that match a given regular expression
-- Used as part of a shell script in string string transformations in variable assignments
+- Used as part of a shell script for string transformations in variable assignments
 - Use printf_stdin.pl to generate custom commands based groups matched and the formatting specification
 - Use printf_stdin.pl as a tool for data profiling by extracting a specific group match that can then be passed to  "| sort | uniq -c"
 - Use printf_stdin.pl to display the line numbers and full text where match occurred (NUMROWS)
@@ -36,6 +36,6 @@ with matched group value positional values passed to the printf spec in any orde
 
 
 
-regex_stdin.pl takes are "regex" as the first parameter)
+regex_stdin.pl takes "regex" as the first parameter)
 
 #### 
