@@ -40,6 +40,6 @@ regex_stdin.pl takes "regex" as the first parameter)
 
 |Examples|Descr, Cmd, Output |
 | --- | --- |
-| match 4 paren groupings,<br><br>notice the group position numbers are passed to the format string in a different order | Description:<br>grp1: (line begins with integer) space char<br>grp2: (the word "quick") space char<br>grp3: (1 or more non-space chars) space char<br>grp4: (remaining chars up to end of line) linefeed char<br><br>Cmd:<br>echo "22 quick brown foxes" \| \\<br>./regex_printf.pl "^(/d+)\s(quick)\s(\S+)\s(.*)$" "%i %s %s and %s" 1 4 2 3<br><br>Output:<br>22 foxes quick and brown|
+| match 4 paren groupings,<br><br>notice the group position numbers are passed to the format string in a different order | Description:<br>grp1: (line begins with integer) space char<br>grp2: (the word "quick") space char<br>grp3: (1 or more non-space chars) space char<br>grp4: (remaining chars up to end of line) linefeed char<br><br>Cmd:<br>echo "22 quick brown foxes" \| \\<br>./regex_stdin.pl "^(/d+)\s(quick)\s(\S+)\s(.*)$" "%i %s %s and %s" 1 4 2 3<br><br>Output:<br>22 foxes quick and brown|
 | example2 | more docs to come |
 
